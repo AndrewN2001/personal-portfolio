@@ -10,7 +10,7 @@ export const metadata = {
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
-  return (
+return (
     <html lang="en">
       <body className={inter.className}>
         <nav className='px-10 bg-gray-800 flex justify-between items-center sticky top-0 py-7'>
@@ -18,7 +18,11 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             andrew's portfolio
           </Link>
           <ul className='flex items-center gap-2'>
-            <li><a className="transition ease-in-out delay-200 duration-300 bg-gray-100 hover:bg-teal-200 text-black py-2 px-4 rounded-lg" href="#">Resume</a></li>
+            <li>
+              <Link className='transition ease-in-out delay-200 duration-300 bg-gray-100 hover:bg-teal-200 text-black py-2 px-4 rounded-lg' href="/May2023_Resume.pdf" download>
+                Resume
+              </Link>
+            </li>
             <li><a className="transition ease-in-out delay-200 duration-300 bg-gray-100 hover:bg-teal-200 text-black py-2 px-4 rounded-lg" href="https://www.linkedin.com/in/andrewnguyenta/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
             <li><a className="transition ease-in-out delay-200 duration-300 bg-gray-100 hover:bg-teal-200 text-black py-2 px-4 rounded-lg" href="https://github.com/AndrewN2001" target="_blank" rel="noreferrer noopener">GitHub</a></li>
           </ul>
